@@ -37,10 +37,27 @@ public class App2Test extends TestCase
     }
 
 
+    // HTTP GET request simulated
+    private void sendGet() throws Exception {
+        String url = "http://www.google.com/search?q=myquery";
+    
+        System.out.println("\nSending 'GET' request to URL : " + url);
+    
+        // Simulated response code
+        int responseCode = 200; // Assuming 200 OK as a successful response code
+        System.out.println("Response Code : " + responseCode);
+    
+        // Simulate the response content
+        String simulatedResponse = "{\"message\":\"This is a simulated response\"}";
+    
+        // Printing the simulated response content
+        System.out.println("Response Content : " + simulatedResponse);
+    }
+
 
 
     // HTTP GET request
-    private void sendGet() throws Exception {
+    private void sendGetReal() throws Exception {
 
         String url = "http://www.google.com/search?q=myquery";
 
